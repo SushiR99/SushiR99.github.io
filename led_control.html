@@ -1,0 +1,29 @@
+<center>
+  <br>
+  <br>
+  <br>
+  <form action="https://api.particle.io/v1/devices/2c0034000f47363333343437/mode_toggle?access_token=56863f9963580c8b37d05fabd6cdce1b233f602b" method="POST">
+  Tell your device what to do!<br>
+  <br>
+  <input type="radio" name="args" value="off"> Turn the LEDs off.
+  <br>
+  <input type="radio" name="args" value="solid"> Solid Light Mode.
+  <br>
+  <br>
+  <input type="radio" name="args" value="shift"> Shift Mode.
+  <br>
+  <input type="radio" name="args" value="music_sync"> Music Synced Mode.
+  <br>
+  <br>
+    <input type="submit">
+  </form>
+
+  <form action = "https://api.particle.io/v1/devices/2c0034000f47363333343437/led_change?access_token=56863f9963580c8b37d05fabd6cdce1b233f602b" method="POST">
+  <label for="favcolor">Solid Color</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+  <input type="submit" value="Submit">
+</form>
+  
+
+  <br>
+  </center>
