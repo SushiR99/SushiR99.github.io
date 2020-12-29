@@ -3,7 +3,7 @@
   <br>
   <br>
   <form action="https://api.particle.io/v1/devices/2c0034000f47363333343437/mode_toggle?access_token=56863f9963580c8b37d05fabd6cdce1b233f602b" method="POST">
-  Tell your device what to do!<br>
+  Tell your rings what to do!<br>
   <br>
   <input type="radio" name="args" value="off"> Turn the LEDs off.
   <br>
@@ -23,7 +23,26 @@
   <input type="color" id="favcolor" name="favcolor" value="#ff0000">
   <input type="submit" value="Submit">
 </form>
+
+<br>
+<form action = "https://api.particle.io/v1/devices/2c0034000f47363333343437/brightness?access_token=56863f9963580c8b37d05fabd6cdce1b233f602b" method="POST">
+  <label for="vol">Set Brightness:</label>
+  <input type="range" id="vol" name="vol" min="0" max="100">
+  <input type="submit">
+</form>
   
+
+<br>
+<form action="https://api.particle.io/v1/devices/2c0034000f47363333343437/mode_toggle?access_token=56863f9963580c8b37d05fabd6cdce1b233f602b" method="POST">
+  Tell your clock what to do!<br>
+  <br>
+  <input type="radio" name="args" value="off"> Turn the LEDs off.
+  <br>
+  <input type="radio" name="args" value="on"> Turn the LEDs on.
+  <br>
+  <br>
+    <input type="submit">
+  </form>
 
   <br>
   </center>
